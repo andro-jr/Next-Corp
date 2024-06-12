@@ -1,7 +1,12 @@
-import React from "react";
+import Hero from "@/components/Hero";
+import PerformanceImg from "/public/performance.jpg";
 
-const PerformancePage = () => {
-  return <div>PerformancePage</div>;
-};
-
-export default PerformancePage;
+export default function PerformancePage() {
+  return (
+    <Hero
+      title="We serve high performance applications"
+      imgAlt="hero img"
+      imgdata={PerformanceImg}
+    />
+  );
+}

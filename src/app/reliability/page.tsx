@@ -1,7 +1,12 @@
-import React from "react";
+import Hero from "@/components/Hero";
+import ReliabilityImg from "/public/reliability.jpg";
 
-const Reliabilitypage = () => {
-  return <div>Reliabilitypage</div>;
-};
-
-export default Reliabilitypage;
+export default function ScalePage() {
+  return (
+    <Hero
+      title="Rely on us like you rely on your mom"
+      imgAlt="hero img"
+      imgdata={ReliabilityImg}
+    />
+  );
+}

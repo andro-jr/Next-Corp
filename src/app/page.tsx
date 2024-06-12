@@ -1,14 +1,6 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import HomeImg from "/public/home.jpg";
 
 export default function Home() {
-  return (
-    <div className="absolute -z-10 inset-0">
-      <Image
-        src="/home.jpg"
-        alt="Car factory"
-        fill
-        style={{ objectFit: "cover" }}
-      ></Image>
-    </div>
-  );
+  return <Hero title="Prabin Hero" imgAlt="hero img" imgdata={HomeImg} />;
 }

@@ -1,7 +1,8 @@
-import React from "react";
+import Hero from "@/components/Hero";
+import ScaleImg from "/public/scale.jpg";
 
-const ScalePage = () => {
-  return <div>ScalePage</div>;
-};
-
-export default ScalePage;
+export default function ScalePage() {
+  return (
+    <Hero title="Scale it to the moon" imgAlt="hero img" imgdata={ScaleImg} />
+  );
+}
